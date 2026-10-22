@@ -7,6 +7,7 @@ Hands-on labs for the course. Every lab runs on your own laptop with Docker. No 
 | Module | Topic | Folder |
 |--------|-------|--------|
 | 1 | Prometheus and setup | [`module-01-prometheus-and-setup`](module-01-prometheus-and-setup/) |
+| 2 | Beginner PromQL | [`module-02-beginner-promql`](module-02-beginner-promql/) |
 
 More modules are added as the course continues.
 

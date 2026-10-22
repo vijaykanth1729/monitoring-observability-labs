@@ -1,0 +1,36 @@
+services:
+  sample-app:
+    build: ../module-01-prometheus-and-setup/sample-app
+    ports:
+      - "8000:8000"
+
+  node-exporter:
+    image: prom/node-exporter:v1.9.1
+    ports:
+      - "9100:9100"
+
+  prometheus:
+    image: prom/prometheus:v3.5.0
+    ports:
+      - "9090:9090"
+    volumes:
+      - ./prometheus.yml:/etc/prometheus/prometheus.yml
+
+  traffic:
+    image: curlimages/curl:8.14.1
+    depends_on:
+      - sample-app
+    entrypoint:
+      - sh
+      - -c
+      - |
+        i=0
+        while true; do
+          curl -s http://sample-app:8000/ > /dev/null
+          curl -s http://sample-app:8000/work > /dev/null
+          i=$$((i+1))
+          if [ $$((i % 5)) -eq 0 ]; then
+            curl -s http://sample-app:8000/error > /dev/null
+          fi
+          sleep 1
+        done
