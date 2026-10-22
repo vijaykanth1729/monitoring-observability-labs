@@ -33,7 +33,8 @@ Both commands should print a version. If you see an error, start Docker Desktop 
 ## Get the labs
 
 ```bash
-git clone <this-repository-url>
+git clone https://github.com/vijaykanth1729/monitoring-observability-labs.git
+
 cd monitoring-observability-labs
 ```
 
