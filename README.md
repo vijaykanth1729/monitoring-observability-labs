@@ -10,6 +10,7 @@ Hands-on labs for the course. Every lab runs on your own laptop with Docker. No 
 | 2 | Beginner PromQL | [`module-02-beginner-promql`](module-02-beginner-promql/) |
 | 3 | Grafana dashboards | [`module-03-grafana-dashboards`](module-03-grafana-dashboards/) |
 | 4 | Simple alerting | [`module-04-simple-alerting`](module-04-simple-alerting/) |
+| 5 | Loki and logs | [`module-05-loki-and-logs`](module-05-loki-and-logs/) |
 
 More modules are added as the course continues.
 
