@@ -11,8 +11,9 @@ Hands-on labs for the course. Every lab runs on your own laptop with Docker. No 
 | 3 | Grafana dashboards | [`module-03-grafana-dashboards`](module-03-grafana-dashboards/) |
 | 4 | Simple alerting | [`module-04-simple-alerting`](module-04-simple-alerting/) |
 | 5 | Loki and logs | [`module-05-loki-and-logs`](module-05-loki-and-logs/) |
+| 6 | Put it all together | [`module-06-end-to-end`](module-06-end-to-end/) |
 
-More modules are added as the course continues.
+That is the full course.
 
 ## What you need
 
